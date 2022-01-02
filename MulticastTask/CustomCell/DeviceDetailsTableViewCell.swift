@@ -8,7 +8,9 @@
 import UIKit
 
 class DeviceDetailsTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var hostNameLbl: UILabel!
+    @IBOutlet weak var portnumberLbl: UILabel!
+    @IBOutlet weak var ipAddressLbl: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
