@@ -11,6 +11,8 @@ class DeviceDetailsTableViewCell: UITableViewCell {
     @IBOutlet weak var hostNameLbl: UILabel!
     @IBOutlet weak var portnumberLbl: UILabel!
     @IBOutlet weak var ipAddressLbl: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,4 +24,9 @@ class DeviceDetailsTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func setUpValues(values:MulticastModel?) {
+        ipAddressLbl?.text = values?.ipAdd
+        hostNameLbl?.text = values?.hostName
+        portnumberLbl?.text = "\(values?.port ?? 0)"
+    }
 }

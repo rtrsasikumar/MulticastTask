@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		53AA40452781782300902AA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA40442781782300902AA2 /* AppDelegate.swift */; };
 		53AA40472781782300902AA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA40462781782300902AA2 /* SceneDelegate.swift */; };
-		53AA40492781782300902AA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA40482781782300902AA2 /* ViewController.swift */; };
+		53AA40492781782300902AA2 /* MultiCastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA40482781782300902AA2 /* MultiCastViewController.swift */; };
 		53AA404C2781782300902AA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AA404A2781782300902AA2 /* Main.storyboard */; };
 		53AA404E2781782400902AA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53AA404D2781782400902AA2 /* Assets.xcassets */; };
 		53AA40512781782400902AA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AA404F2781782400902AA2 /* LaunchScreen.storyboard */; };
@@ -17,6 +17,8 @@
 		53AA40662781782400902AA2 /* MulticastTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA40652781782400902AA2 /* MulticastTaskUITests.swift */; };
 		53AA40682781782400902AA2 /* MulticastTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA40672781782400902AA2 /* MulticastTaskUITestsLaunchTests.swift */; };
 		53AA407E2781E6DF00902AA2 /* DeviceDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA407D2781E6DF00902AA2 /* DeviceDetailsTableViewCell.swift */; };
+		53CED0CB2784B67E008FDEBD /* MultiCastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CED0CA2784B67E008FDEBD /* MultiCastViewModel.swift */; };
+		53CED0CD2784BADB008FDEBD /* MulticastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CED0CC2784BADB008FDEBD /* MulticastModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,7 @@
 		53AA40412781782300902AA2 /* MulticastTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MulticastTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53AA40442781782300902AA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53AA40462781782300902AA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		53AA40482781782300902AA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		53AA40482781782300902AA2 /* MultiCastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCastViewController.swift; sourceTree = "<group>"; };
 		53AA404B2781782300902AA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53AA404D2781782400902AA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53AA40502781782400902AA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		53AA40652781782400902AA2 /* MulticastTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastTaskUITests.swift; sourceTree = "<group>"; };
 		53AA40672781782400902AA2 /* MulticastTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		53AA407D2781E6DF00902AA2 /* DeviceDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		53CED0CA2784B67E008FDEBD /* MultiCastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCastViewModel.swift; sourceTree = "<group>"; };
+		53CED0CC2784BADB008FDEBD /* MulticastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +108,10 @@
 				53AA40442781782300902AA2 /* AppDelegate.swift */,
 				53AA40462781782300902AA2 /* SceneDelegate.swift */,
 				53AA407C2781E6C100902AA2 /* CustomCell */,
-				53AA40752781CD5600902AA2 /* View */,
+				53CED0CE2784C319008FDEBD /* Model */,
+				53CED0C92784B600008FDEBD /* ViewModel */,
 				53AA40742781CD4800902AA2 /* Controller */,
+				53AA40752781CD5600902AA2 /* View */,
 				53AA404D2781782400902AA2 /* Assets.xcassets */,
 				53AA404F2781782400902AA2 /* LaunchScreen.storyboard */,
 				53AA40522781782400902AA2 /* Info.plist */,
@@ -133,7 +139,7 @@
 		53AA40742781CD4800902AA2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				53AA40482781782300902AA2 /* ViewController.swift */,
+				53AA40482781782300902AA2 /* MultiCastViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -152,6 +158,22 @@
 				53AA407D2781E6DF00902AA2 /* DeviceDetailsTableViewCell.swift */,
 			);
 			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		53CED0C92784B600008FDEBD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				53CED0CA2784B67E008FDEBD /* MultiCastViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		53CED0CE2784C319008FDEBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53CED0CC2784BADB008FDEBD /* MulticastModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,10 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53CED0CD2784BADB008FDEBD /* MulticastModel.swift in Sources */,
 				53AA407E2781E6DF00902AA2 /* DeviceDetailsTableViewCell.swift in Sources */,
-				53AA40492781782300902AA2 /* ViewController.swift in Sources */,
+				53AA40492781782300902AA2 /* MultiCastViewController.swift in Sources */,
 				53AA40452781782300902AA2 /* AppDelegate.swift in Sources */,
 				53AA40472781782300902AA2 /* SceneDelegate.swift in Sources */,
+				53CED0CB2784B67E008FDEBD /* MultiCastViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,7 +491,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4C3748566Y;
+				DEVELOPMENT_TEAM = DPDP9Y4KUD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MulticastTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -496,7 +520,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4C3748566Y;
+				DEVELOPMENT_TEAM = DPDP9Y4KUD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MulticastTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
